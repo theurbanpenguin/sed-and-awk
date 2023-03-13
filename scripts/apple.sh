@@ -1,0 +1,2 @@
+FRUIT=apple
+echo $FRUIT
