@@ -6,6 +6,6 @@
   else
     printf "%8s %2s %3s %4s\n", $1,$6,$5,$9};
 END {
-  print "====================“;
+  print "====================";
   print "Total Number of Users Processed: ", COUNT;
 }
