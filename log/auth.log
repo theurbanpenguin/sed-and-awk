@@ -1,0 +1,92 @@
+-- Logs begin at Tue 2023-05-09 08:49:28 UTC, end at Tue 2023-05-09 10:34:08 UTC. --
+May 09 08:49:39 ip-172-31-35-140 systemd[1]: Starting OpenBSD Secure Shell server...
+May 09 08:49:39 ip-172-31-35-140 sshd[656]: Server listening on 0.0.0.0 port 22.
+May 09 08:49:39 ip-172-31-35-140 sshd[656]: Server listening on :: port 22.
+May 09 08:49:39 ip-172-31-35-140 systemd[1]: Started OpenBSD Secure Shell server.
+May 09 08:52:05 ip-172-31-35-140 sshd[1166]: Accepted publickey for ubuntu from 81.97.43.189 port 57868 ssh2: RSA SHA256:S1ueIeq6H1GlLPmln4IpVcadjUqekuP9qOA0wORHpz0
+May 09 08:52:05 ip-172-31-35-140 sshd[1166]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+May 09 08:53:18 ubuntu sshd[656]: Received signal 15; terminating.
+May 09 08:53:18 ubuntu systemd[1]: Stopping OpenBSD Secure Shell server...
+May 09 08:53:18 ubuntu systemd[1]: ssh.service: Succeeded.
+May 09 08:53:18 ubuntu systemd[1]: Stopped OpenBSD Secure Shell server.
+May 09 08:53:18 ubuntu systemd[1]: Starting OpenBSD Secure Shell server...
+May 09 08:53:18 ubuntu sshd[5271]: Server listening on 0.0.0.0 port 22.
+May 09 08:53:18 ubuntu sshd[5271]: Server listening on :: port 22.
+May 09 08:53:18 ubuntu systemd[1]: Started OpenBSD Secure Shell server.
+May 09 09:03:23 ubuntu sshd[5346]: AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys tux SHA256:TMNp2IuMQRrFe+QL1qLgwP7K3/zujsd74PmT0jEA9tA failed, status 22
+May 09 09:03:29 ubuntu sshd[5346]: Accepted password for tux from 81.97.43.189 port 57870 ssh2
+May 09 09:03:29 ubuntu sshd[5346]: pam_unix(sshd:session): session opened for user tux by (uid=0)
+May 09 09:23:29 ubuntu sshd[5630]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=79.187.33.125  user=root
+May 09 09:23:31 ubuntu sshd[5630]: Failed password for root from 79.187.33.125 port 44250 ssh2
+May 09 09:23:36 ubuntu sshd[5630]: Failed password for root from 79.187.33.125 port 44250 ssh2
+May 09 09:23:41 ubuntu sshd[5630]: Failed password for root from 79.187.33.125 port 44250 ssh2
+May 09 09:23:43 ubuntu sshd[5630]: Failed password for root from 79.187.33.125 port 44250 ssh2
+May 09 09:23:47 ubuntu sshd[5630]: Failed password for root from 79.187.33.125 port 44250 ssh2
+May 09 09:23:53 ubuntu sshd[5630]: Failed password for root from 79.187.33.125 port 44250 ssh2
+May 09 09:23:55 ubuntu sshd[5630]: error: maximum authentication attempts exceeded for root from 79.187.33.125 port 44250 ssh2 [preauth]
+May 09 09:23:55 ubuntu sshd[5630]: Disconnecting authenticating user root 79.187.33.125 port 44250: Too many authentication failures [preauth]
+May 09 09:23:55 ubuntu sshd[5630]: PAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=79.187.33.125  user=root
+May 09 09:23:55 ubuntu sshd[5630]: PAM service(sshd) ignoring max retries; 5 > 3
+May 09 09:24:03 ubuntu sshd[5632]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=79.187.33.125  user=root
+May 09 09:24:05 ubuntu sshd[5632]: Failed password for root from 79.187.33.125 port 44674 ssh2
+May 09 09:24:10 ubuntu sshd[5632]: Failed password for root from 79.187.33.125 port 44674 ssh2
+May 09 09:24:15 ubuntu sshd[5632]: Failed password for root from 79.187.33.125 port 44674 ssh2
+May 09 09:24:20 ubuntu sshd[5632]: Failed password for root from 79.187.33.125 port 44674 ssh2
+May 09 09:24:26 ubuntu sshd[5632]: Failed password for root from 79.187.33.125 port 44674 ssh2
+May 09 09:24:30 ubuntu sshd[5632]: Failed password for root from 79.187.33.125 port 44674 ssh2
+May 09 09:24:30 ubuntu sshd[5632]: error: maximum authentication attempts exceeded for root from 79.187.33.125 port 44674 ssh2 [preauth]
+May 09 09:24:30 ubuntu sshd[5632]: Disconnecting authenticating user root 79.187.33.125 port 44674: Too many authentication failures [preauth]
+May 09 09:24:30 ubuntu sshd[5632]: PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=79.187.33.125  user=root
+May 09 09:24:30 ubuntu sshd[5632]: PAM service(sshd) ignoring max retries; 6 > 3
+May 09 09:24:40 ubuntu sshd[5635]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=79.187.33.125  user=root
+May 09 09:24:42 ubuntu sshd[5635]: Failed password for root from 79.187.33.125 port 45096 ssh2
+May 09 09:24:46 ubuntu sshd[5635]: Failed password for root from 79.187.33.125 port 45096 ssh2
+May 09 09:24:51 ubuntu sshd[5635]: Failed password for root from 79.187.33.125 port 45096 ssh2
+May 09 09:24:58 ubuntu sshd[5635]: Failed password for root from 79.187.33.125 port 45096 ssh2
+May 09 09:25:06 ubuntu sshd[5635]: Failed password for root from 79.187.33.125 port 45096 ssh2
+May 09 09:25:07 ubuntu sshd[5635]: Connection closed by authenticating user root 79.187.33.125 port 45096 [preauth]
+May 09 09:25:07 ubuntu sshd[5635]: PAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=79.187.33.125  user=root
+May 09 09:25:07 ubuntu sshd[5635]: PAM service(sshd) ignoring max retries; 5 > 3
+May 09 09:26:19 ubuntu sshd[5638]: AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys tux SHA256:TMNp2IuMQRrFe+QL1qLgwP7K3/zujsd74PmT0jEA9tA failed, status 22
+May 09 09:26:25 ubuntu sshd[5638]: Accepted password for tux from 81.97.43.189 port 57872 ssh2
+May 09 09:26:25 ubuntu sshd[5638]: pam_unix(sshd:session): session opened for user tux by (uid=0)
+May 09 09:27:17 ubuntu sshd[5777]: AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys tux SHA256:TMNp2IuMQRrFe+QL1qLgwP7K3/zujsd74PmT0jEA9tA failed, status 22
+May 09 09:27:23 ubuntu sshd[5777]: Accepted password for tux from 81.97.43.189 port 57874 ssh2
+May 09 09:27:23 ubuntu sshd[5777]: pam_unix(sshd:session): session opened for user tux by (uid=0)
+May 09 10:00:14 ubuntu sshd[6010]: AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys tux SHA256:TMNp2IuMQRrFe+QL1qLgwP7K3/zujsd74PmT0jEA9tA failed, status 22
+May 09 10:00:18 ubuntu sshd[6010]: Accepted password for tux from 81.97.43.189 port 57876 ssh2
+May 09 10:00:18 ubuntu sshd[6010]: pam_unix(sshd:session): session opened for user tux by (uid=0)
+May 09 10:01:14 ubuntu sshd[6152]: Invalid user user from 59.115.79.47 port 40118
+May 09 10:01:14 ubuntu sshd[6152]: pam_unix(sshd:auth): check pass; user unknown
+May 09 10:01:14 ubuntu sshd[6152]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=59.115.79.47
+May 09 10:01:17 ubuntu sshd[6152]: Failed password for invalid user user from 59.115.79.47 port 40118 ssh2
+May 09 10:01:25 ubuntu sshd[6152]: pam_unix(sshd:auth): check pass; user unknown
+May 09 10:01:27 ubuntu sshd[6152]: Failed password for invalid user user from 59.115.79.47 port 40118 ssh2
+May 09 10:01:33 ubuntu sshd[6152]: pam_unix(sshd:auth): check pass; user unknown
+May 09 10:01:35 ubuntu sshd[6152]: Failed password for invalid user user from 59.115.79.47 port 40118 ssh2
+May 09 10:01:42 ubuntu sshd[6152]: pam_unix(sshd:auth): check pass; user unknown
+May 09 10:01:44 ubuntu sshd[6152]: Failed password for invalid user user from 59.115.79.47 port 40118 ssh2
+May 09 10:01:48 ubuntu sshd[6152]: pam_unix(sshd:auth): check pass; user unknown
+May 09 10:01:49 ubuntu sshd[6152]: Failed password for invalid user user from 59.115.79.47 port 40118 ssh2
+May 09 10:01:56 ubuntu sshd[6152]: Failed password for invalid user user from 59.115.79.47 port 40118 ssh2
+May 09 10:01:56 ubuntu sshd[6152]: error: maximum authentication attempts exceeded for invalid user user from 59.115.79.47 port 40118 ssh2 [preauth]
+May 09 10:01:56 ubuntu sshd[6152]: Disconnecting invalid user user 59.115.79.47 port 40118: Too many authentication failures [preauth]
+May 09 10:01:56 ubuntu sshd[6152]: PAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=59.115.79.47
+May 09 10:01:56 ubuntu sshd[6152]: PAM service(sshd) ignoring max retries; 5 > 3
+May 09 10:02:42 ubuntu sshd[6180]: Connection closed by 59.115.79.47 port 40430 [preauth]
+May 09 10:03:37 ubuntu sshd[6184]: Invalid user pi from 220.133.137.18 port 40044
+May 09 10:03:37 ubuntu sshd[6184]: pam_unix(sshd:auth): check pass; user unknown
+May 09 10:03:37 ubuntu sshd[6184]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=220.133.137.18
+May 09 10:03:39 ubuntu sshd[6184]: Failed password for invalid user pi from 220.133.137.18 port 40044 ssh2
+May 09 10:03:47 ubuntu sshd[6184]: pam_unix(sshd:auth): check pass; user unknown
+May 09 10:03:50 ubuntu sshd[6184]: Failed password for invalid user pi from 220.133.137.18 port 40044 ssh2
+May 09 10:03:55 ubuntu sshd[6184]: pam_unix(sshd:auth): check pass; user unknown
+May 09 10:03:56 ubuntu sshd[6184]: Failed password for invalid user pi from 220.133.137.18 port 40044 ssh2
+May 09 10:04:02 ubuntu sshd[6184]: pam_unix(sshd:auth): check pass; user unknown
+May 09 10:04:04 ubuntu sshd[6184]: Failed password for invalid user pi from 220.133.137.18 port 40044 ssh2
+May 09 10:04:37 ubuntu sshd[6184]: Connection closed by invalid user pi 220.133.137.18 port 40044 [preauth]
+May 09 10:04:37 ubuntu sshd[6184]: PAM 3 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=220.133.137.18
+May 09 10:04:37 ubuntu sshd[6184]: PAM service(sshd) ignoring max retries; 4 > 3
+May 09 10:30:41 ubuntu sshd[6222]: AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys tux SHA256:TMNp2IuMQRrFe+QL1qLgwP7K3/zujsd74PmT0jEA9tA failed, status 22
+May 09 10:30:46 ubuntu sshd[6222]: Accepted password for tux from 81.97.43.189 port 57878 ssh2
+May 09 10:30:46 ubuntu sshd[6222]: pam_unix(sshd:session): session opened for user tux by (uid=0)
